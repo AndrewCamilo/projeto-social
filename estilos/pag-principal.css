@@ -11,30 +11,38 @@ body {
 
 }
 
-div > iframe {
+main {
+    position: relative;
+    height: 97vh;
+}
+
+section {
+    background-image: url('../imagens/frame-iphone.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 630px;
+    width: 310px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+section > iframe {
     margin: auto;
     display: block;
 }
 
-.phone {
-    background-image: url('../imagens/frame-iphone.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: auto;
-    height: 630px;
-    width: 310px;
-    position: relative;
-    border: 1px solid black;
-}
-
-.frame {
+#phone {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50.6%, -49.9%);
-    width: 25vw;
-    height: 70.5vh;
+    transform: translate(-50%, -50%);
+    width: 267px;
+    height: 475px;
 }
+
+
 
 iframe {
     width: 100%;
